@@ -1,0 +1,30 @@
+<html>
+<head><title>STUDENT INFO</title></head>
+<body bgcolor="skyblue"><h2 align="center">STUDENT INFO</h2>
+<!---- d variable fecth all the data from database ---->
+
+<form method="POST" action="/sinfoprocess" align="center" >
+	  <table align="center">
+	  <input type="hidden" name="rid" value="{{d.0}}">
+	  <tr><td>Name :</td> <td>{{d.1}}</td></tr>
+      <tr><td>Age :</td> <td>{{d.2}}</td></tr>
+	  <tr><td>Gender :</td> <td>{{d.3}}</td></tr>
+	  <tr><td>Caste :</td> <td>{{d.4}}</td></tr>
+	  <tr><td>Current Semester:</td> <td>{{d.5}}</td></tr>
+	  <tr><td>Current Year :</td> <td>{{d.6}}</td></tr>
+	  <tr><td>Branch :</td> <td>{{d.7}}</td></tr>
+	  <tr><td>Last Education Completed :</td> <td>{{d.8}}</td></tr>
+	  <tr><td>Aadhar Number :</td> <td>{{d.9}}</td></tr>
+	  <tr><td>Address :</td> <td>{{d.10}}</td></tr>
+	  </table>
+	  <input type="submit" name="any" value="Edit">
+      <input type="submit" name="any" value="Delete">
+      <input type="submit" name="any" value="Back">
+      <input type="Submit" name="any" value="Logout"></form>
+</form>
+
+</body>
+</html>
+
+
+

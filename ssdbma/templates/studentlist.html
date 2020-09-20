@@ -1,0 +1,29 @@
+<html>
+<head><title>STUDENTS INFO</title></head>
+<body bgcolor="skyblue"><h2 align="center">STUDENTS INFO</h2>
+<form method="POST" action="/searchstud">
+<tr><td>Search by Name:</td><td><input type="text" name="name"></td><td><input type="submit" name="send"></td></tr><br>
+<tr>Note: Enter First Name with Last Name Properly Case Sensitive</tr>
+
+</form>
+<!---- d variable fecth all the data from database ---->
+<table border="1" align="center" >
+<tr><th>Name</th><th>Semester</th><th>Year</th><th>Branch</th><th>View</th></tr>
+
+{% for x in d: %}
+<tr>
+<td>{{x.1}}</td>
+<td>{{x.5}}</td>
+<td>{{x.6}}</td>
+<td>{{x.7}}</td>
+<td><a href="/viewstud/{{x.0}}">view</a></td>
+</tr>
+{% endfor %}
+</table>
+<form method="POST" action="/slistprocess" align="center">
+<input type="submit" name="any" value="Newregistration">
+<input type="submit" name="any" value="Back">
+<input type="Submit" name="any" value="Logout"></form>
+
+</body>
+</html>

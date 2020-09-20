@@ -1,0 +1,21 @@
+<html>
+<head><title>NON-TEACHING STAFF</title></head>
+<body bgcolor="skyblue"><h2 align="center">NON-TEACHING STAFF INFO</h2>
+<!---- d variable fecth all the data from database ---->
+<table border="1" align="center" >
+<tr><th>Name</th><th>View</th></tr>
+
+{% for x in d: %}
+<tr>
+<td>{{x.1}}</td>
+<td><a href="/viewnonteach/{{x.0}}">view</a></td>
+</tr>
+{% endfor %}
+</table>
+<form method="POST" action="/nontlistprocess" align="center">
+<input type="submit" name="any" value="Newregistration">
+<input type="submit" name="any" value="Back">
+<input type="Submit" name="any" value="Logout"></form>
+
+</body>
+</html>

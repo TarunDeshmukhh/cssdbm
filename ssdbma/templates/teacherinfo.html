@@ -1,0 +1,39 @@
+<html>
+<head><title>TEACHER INFO</title></head>
+<body bgcolor="skyblue"><h2 align="center">TEACHER INFO</h2>
+<!---- d variable fecth all the data from database ---->
+
+<form method="POST" action="/tinfoprocess" align="center" >
+	  <table align="center">
+	  <input type="hidden" name="rid" value="{{d.0}}">
+	  <tr><td>Name </td> <td>: {{d[1]}}</td></tr></tr>
+      <tr><td>Age </td> <td>: {{d[2]}}</td></tr></tr>
+	  <tr><td>Gender </td> <td>: {{d[3]}}</td></tr>
+	  <tr><td>Education </td> <td>: {{d[4]}}</td></tr>
+	  <tr><td>Subjects Expertise</td> <td>: {{d[5]}}</td></tr>
+	  <tr><td>Job Position</td> <td>: {{d[6]}}</td></tr>
+	  <tr><td>Address </td> <td>: {{d[7]}}</td></tr>
+	  <tr><td>Aadhar Number </td> <td>: {{d[8]}}</td></tr>
+	  <tr><td>Pan Number </td> <td>: {{d[9]}}</td></tr>
+	  <tr><td>Salary Account Details </td> <td>: {{d[10]}}</td></tr>
+	  <tr><td>Annual Salary </td> <td>: {{d[11]}}</td></tr>
+	  </table>
+	  <input type="submit" name="any" value="Edit">
+      <input type="submit" name="any" value="Delete">
+      <input type="submit" name="any" value="Back">
+      <input type="Submit" name="any" value="Logout"></form>
+      </form>
+
+<!---- 
+<form align="center" action="/process">
+<input type="submit" name="edit" value="Edit">
+<input type="submit" name="delete" value="Delete">
+<input type="submit" name="back" value="Back">
+<input type="Submit" name="logout" value="Logout"></form>
+
+</body>
+</html>
+---->
+
+
+

@@ -1,0 +1,23 @@
+<html>
+<head><title>TEACHING STAFF</title></head>
+<body bgcolor="skyblue"><h2 align="center">TEACHING STAFF INFO</h2>
+<!---- d variable fecth all the data from database ---->
+<table border="1" align="center" >
+<tr><th>Name</th><th>View</th></tr>
+
+{% for x in d: %}
+<tr>
+<td>{{x.1}}</td>
+<td><a href="/viewteach/{{x.0}}">view</a></td>
+</tr>
+{% endfor %}
+
+</table>
+
+<form method="POST" action="/tlistprocess" align="center">
+<input type="submit" name="any" value="Newregistration">
+<input type="submit" name="any" value="Back">
+<input type="Submit" name="any" value="Logout"></form>
+
+</body>
+</html>
